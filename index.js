@@ -1,10 +1,6 @@
 export async function generateSha256Checksum(jsonPayload) {
-  const comparePayload =
-    typeof jsonPayload === "string" ? jsonPayload : JSON.stringify(jsonPayload);
   const payload =
-    filename?.length > 0
-      ? filename.join("|") + "|" + comparePayload
-      : comparePayload;
+    typeof jsonPayload === "string" ? jsonPayload : JSON.stringify(jsonPayload);
   const encoder = new TextEncoder();
   const dataAsUint8Array = encoder.encode(payload);
   const hashBuffer = await crypto.subtle.digest("SHA-256", dataAsUint8Array);
