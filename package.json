@@ -1,0 +1,33 @@
+{
+  "name": "itopplus-hash-art",
+  "version": "1.0.0",
+  "description": "Hash-based art generation library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublishOnly": "npm test"
+  },
+  "keywords": [
+    "hash",
+    "art",
+    "generative",
+    "visualization"
+  ],
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/your-username/itopplus-hash-art.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/itopplus-hash-art/issues"
+  },
+  "homepage": "https://github.com/your-username/itopplus-hash-art#readme",
+  "files": [
+    "index.js",
+    "README.md"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}
